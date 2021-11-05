@@ -1,4 +1,4 @@
-import { lighten } from 'polished';
+import { lighten, darken } from 'polished';
 import styled from 'styled-components';
 
 interface NavLinkProps {
@@ -10,13 +10,26 @@ export const Container = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 4rem;
-  border-bottom: 1px solid ${({ theme }) => theme.backgroundLight};
+  height: 3rem; 
+  /* height: 4rem;  */
+  border-bottom: 1px solid ${({ theme }) => theme.textHighlight};
 
   ul { 
     display: flex;
     gap: 2rem;
     align-items: center;
+  }
+
+  img {
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    width: 3rem;
+    /* height: 3rem; */
+  }
+
+  img:hover {
+    transform: scale(0.95);
   }
 `;
 
@@ -30,8 +43,10 @@ export const NavLinkContainer = styled.li<NavLinkProps> `
       &:hover {
         color: ${props => 
          props.isActive
-          ? lighten(0.2, props.theme.primary)
-          : lighten(0.2, props.theme.textHighlight)}
+          ? lighten(0.2, props.theme.textHighlight)
+          : darken(0.5, props.theme.primary)}
+          /* lighten(0.2, props.theme.primary) */
+          /* lighten(0.2, props.theme.textHighlight)} */
       }
   }
 `;
