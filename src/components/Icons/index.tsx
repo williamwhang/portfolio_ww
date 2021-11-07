@@ -11,7 +11,7 @@ function Icons() {
   return (
     <Container>
       <div className="container">
-      
+
           <AiOutlineGithub
             onClick={() => handleRedirect("https://github.com/williamwhang")}
           />
