@@ -16,13 +16,19 @@ export const TextContainer = styled.section`
   width: 100%;
 
   h1 {
-      font-size: 8rem;
+      font-size: 4rem;
       color: ${({ theme }) => theme.primary};
   }
 
   h2 {
+      font-size: 8rem;
+      font-weight: bold;
+      /* color: ${({ theme }) => theme.secondary}; */
+      color: #ffffff;
+  }
+
+  h3 {
       font-size: 3rem;
-      font-weight: 400;
-      color: ${({ theme }) => theme.secondary};
+      color: ${({ theme }) => theme.primary};
   }
 `;

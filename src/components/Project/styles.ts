@@ -88,4 +88,10 @@ export const ProjectContainer = styled.div<ProjectProps>`
   &:nth-child(even) {
       flex-direction: row-reverse;
   }
+
+  &:hover > section {
+       filter: brightness(1.3);
+       transform: translateY(-30px);
+       transition: 0.5s;
+  }
 `;

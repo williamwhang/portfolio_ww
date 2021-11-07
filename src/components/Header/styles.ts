@@ -10,13 +10,13 @@ export const Container = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 3rem; 
-  /* height: 4rem;  */
-  border-bottom: 1px solid ${({ theme }) => theme.textHighlight};
+  height: 4rem; 
+  /* height: 3rem;  */
+  /* border-bottom: 1px solid ${({ theme }) => theme.textHighlight}; */
 
   ul { 
     display: flex;
-    gap: 2rem;
+    gap: 6rem;
     align-items: center;
   }
 
@@ -24,7 +24,7 @@ export const Container = styled.header`
     display: block;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    width: 3rem;
+    width: 4rem;
     /* height: 3rem; */
   }
 
@@ -43,8 +43,8 @@ export const NavLinkContainer = styled.li<NavLinkProps> `
       &:hover {
         color: ${props => 
          props.isActive
-          ? lighten(0.2, props.theme.textHighlight)
-          : darken(0.5, props.theme.primary)}
+          ? lighten(0.2, props.theme.primary)
+          : darken(0.5, props.theme.textHighlight)}
           /* lighten(0.2, props.theme.primary) */
           /* lighten(0.2, props.theme.textHighlight)} */
       }

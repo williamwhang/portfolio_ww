@@ -7,7 +7,8 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
-    /* 'Roboto Slab', serif; */
+    /* font-family: 'Arimo', sans-serif; */
+    /* font-family: 'Roboto Slab', serif;  */
     ::-webkit-scrollbar {
       width: 8px;
       height: 5px;
