@@ -46,11 +46,6 @@ export default class MyDocument extends Document {
           <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Josefin+Sans:ital,wght@0,400;1,200&family=Roboto+Slab:wght@200;400;900&display=swap" rel="stylesheet"
           />
-
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500;700&family=Inter:wght@400;600;700&family=Josefin+Sans:ital,wght@0,400;1,200&family=Roboto+Slab:wght@200;400;900&display=swap" rel="stylesheet"
-          />
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         </Head>

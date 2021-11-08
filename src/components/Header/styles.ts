@@ -8,8 +8,9 @@ interface NavLinkProps {
 export const Container = styled.header`
   width:100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: right;
+  float: right;
+  /* justify-content: center; */
   height: 4rem; 
   /* height: 3rem;  */
   /* border-bottom: 1px solid ${({ theme }) => theme.textHighlight}; */
@@ -22,9 +23,9 @@ export const Container = styled.header`
 
   img {
     display: block;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    width: 4rem;
+    margin-inline-start: 50px;
+    /* margin-inline-end: 0px; */
+    width: 4.5rem;
     /* height: 3rem; */
   }
 
@@ -43,8 +44,8 @@ export const NavLinkContainer = styled.li<NavLinkProps> `
       &:hover {
         color: ${props => 
          props.isActive
-          ? lighten(0.2, props.theme.primary)
-          : darken(0.5, props.theme.textHighlight)}
+          ? darken(0.2, props.theme.textHighlight)
+          : lighten(0.5, props.theme.primary)}
           /* lighten(0.2, props.theme.primary) */
           /* lighten(0.2, props.theme.textHighlight)} */
       }

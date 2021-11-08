@@ -3,11 +3,10 @@ import styled from 'styled-components';
 export const Container = styled.footer`
   width: 100%;
   display: flex;
-  margin-top: 10rem;
+  margin-top: 5rem;
   height: 5rem;
-  /* justify-content: left; */
-  background-color: none;
-
+  text-align: right;
+  float: right;
   
   > button {
       height: 5rem;

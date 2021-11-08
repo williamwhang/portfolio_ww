@@ -12,7 +12,7 @@ function HomeHero() {
       <div>
         <TextContainer>
           {/* <h1>I'm William Whang, a full stack designer, front-end and sportsman.</h1> */}
-          <h2>I'm William Whang, a full stack designer, front-end and sportsman.</h2>
+          <h2>I'm William Whang, Front-end Developer, Full-Stack Designer, and a Crossfit.</h2>
           {/* <h3>FULL STACK / DESIGNER</h3> */}
         </TextContainer>
         <Icons />

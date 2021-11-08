@@ -3,20 +3,19 @@ import { BiUpArrow, IconName } from "react-icons/bi";
 import { Container } from './styles';
 
 function Footer() {
+   function handleScrollTop() {
+     window.scroll({
+       top: 0,
+       behavior: 'smooth'
+     })
+   }
+
   return (
     <Container>
-      {/* <button type="button">
-        Voltar ao top
-        <BiUpArrow
-          onClick={() => handleRedirect("https://github.com/williamwhang")}
-        />
-      </button> */}
-
       <div className="container">
         <BiUpArrow
-          onClick={() => handleRedirect("https://github.com/williamwhang")}
+          onClick={handleScrollTop}
         />
-        
       </div>
     </Container>
   );

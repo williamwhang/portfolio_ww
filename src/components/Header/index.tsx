@@ -7,7 +7,7 @@ function Header() {
     <Container>
       <ul>
         <img src={logo} alt="Logo" />
-        <NavLink title="Will" path="/" />
+        {/* <NavLink title="Will" path="/" /> */}
         <NavLink title="About" path="/about" />
         <NavLink title="Project" path="/project" />
         <NavLink title="Contact" path="/contact" />
