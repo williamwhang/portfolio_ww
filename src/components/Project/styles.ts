@@ -5,10 +5,11 @@ interface ProjectProps {
 }
 
 export const Container = styled.section`
-  width:100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* align-items: flex-start; */
   gap: 5rem;
 
   > section {
@@ -24,11 +25,13 @@ export const Container = styled.section`
 `;
 
 export const ProjectContainer = styled.div<ProjectProps>`
-  width: 100%;
+  width: 30%;
   display: flex;
-  height: 25rem;
-  align-items: flex-end;
-  position: relative;
+  height: 30rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  /* position: relative; */
 
   > button {
      height: 4rem;
@@ -66,7 +69,7 @@ export const ProjectContainer = styled.div<ProjectProps>`
       > div.text {
           position: absolute;
           top: 3rem;
-          right: -10rem;
+          right: 20rem;
           transition: 0.5s;
           width: fit-content;
 
@@ -85,9 +88,9 @@ export const ProjectContainer = styled.div<ProjectProps>`
       }
   }
 
-  &:nth-child(even) {
+  /* &:nth-child(even) {
       flex-direction: row-reverse;
-  }
+  } */
 
   &:hover > section {
        filter: brightness(1.3);

@@ -12,7 +12,7 @@ export const Container = styled.div`
  svg {
         width: 5rem;
         height: 3.5rem;
-        color: ${({ theme }) => darken(0.4, theme.textHighlight)};
+        color: ${({ theme }) => darken(0.2, theme.secondary)};
         transition: 0.5s;
         cursor: pointer;
         gap: 8rem;

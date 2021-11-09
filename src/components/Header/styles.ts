@@ -13,12 +13,12 @@ export const Container = styled.header`
   /* justify-content: center; */
   height: 4rem; 
   /* height: 3rem;  */
-  /* border-bottom: 1px solid ${({ theme }) => theme.textHighlight}; */
 
   ul { 
     display: flex;
     gap: 6rem;
     align-items: center;
+    transition: 0.5s;
   }
 
   img {
@@ -32,22 +32,24 @@ export const Container = styled.header`
   img:hover {
     transform: scale(0.95);
   }
+
+  /* ul:hover {
+    transform: scale(0.95);
+  } */
 `;
 
 export const NavLinkContainer = styled.li<NavLinkProps> `
   a {
       text-transform: uppercase;
       color: ${props => 
-      props.isActive ? props.theme.primary : props.theme.textHighlight};
+      props.isActive ? props.theme.primary : props.theme.secondary};
       transition: 0.5s;
 
       &:hover {
         color: ${props => 
          props.isActive
-          ? darken(0.2, props.theme.textHighlight)
+          ? darken(0.2, props.theme.secondary)
           : lighten(0.5, props.theme.primary)}
-          /* lighten(0.2, props.theme.primary) */
-          /* lighten(0.2, props.theme.textHighlight)} */
       }
   }
 `;

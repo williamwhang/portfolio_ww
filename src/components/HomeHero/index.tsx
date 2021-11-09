@@ -1,4 +1,3 @@
-import React from 'react';
 import Icons from '../Icons';
 import { Container, TextContainer } from './styles';
 
@@ -12,8 +11,7 @@ function HomeHero() {
       <div>
         <TextContainer>
           {/* <h1>I'm William Whang, a full stack designer, front-end and sportsman.</h1> */}
-          <h2>I'm William Whang, Front-end Developer, Full-Stack Designer, and a Crossfit.</h2>
-          {/* <h3>FULL STACK / DESIGNER</h3> */}
+          <h1>I'm William Whang, Front-end Developer, Full-Stack Designer, and a Crossfit.</h1>
         </TextContainer>
         <Icons />
       </div>

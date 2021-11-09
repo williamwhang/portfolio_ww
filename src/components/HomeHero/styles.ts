@@ -5,8 +5,20 @@ export const Container = styled.section`
   display: flex;
   gap: 2rem;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
+  /* align-items: right; */
+  /* float: right; */
   margin-top: 5rem;
+  /* margin-right: 0;
+  padding-left: 0; */
+  margin-left: 0;
+
+
+  @media (max-width: 1450px) {
+    > div {
+    flex: 1;
+    }
+  }
 
 `;
 
@@ -16,19 +28,21 @@ export const TextContainer = styled.section`
   width: 100%;
 
   h1 {
-      font-size: 4rem;
-      color: ${({ theme }) => theme.primary};
-  }
-
-  h2 {
       font-size: 8rem;
       font-weight: bold;
-      /* color: ${({ theme }) => theme.secondary}; */
-      color: #ffffff;
+      color: #fff;
   }
 
-  h3 {
-      font-size: 3rem;
-      color: ${({ theme }) => theme.primary};
+  @media (max-width: 1450px) {
+    h1 {
+    font-size: 5rem;
+    }
   }
+
+  @media (max-width: 1000px) {
+    h1 {
+    font-size: 3rem;
+    }
+  }
+  
 `;
