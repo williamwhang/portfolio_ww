@@ -7,6 +7,7 @@ import Project from '../components/Project';
 import FormContact from '../components/FormContact';
 import Footer from '../components/Footer';
 
+
 export default function Home() {
   return (
     <HomeContainer>

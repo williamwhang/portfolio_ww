@@ -22,7 +22,8 @@ export const Container = styled.footer`
         cursor: pointer;
         gap: 8rem;
         &:hover {
-            color: #7423FF;
-            transform: scale(0.95);
+           color: ${({ theme }) => (theme.secondary)};
+           transform: scale(0.95);
         }
+    }
 `;

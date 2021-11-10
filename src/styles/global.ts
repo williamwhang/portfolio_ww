@@ -14,16 +14,18 @@ export default createGlobalStyle`
       height: 5px;
     }
     ::-webkit-scrollbar-thumb {
-      background: ${({ theme }) => theme.textHighlight};
+      background: ${({ theme }) => (theme.secondary)};
       border-radius: 10px;
     }
     ::-webkit-scrollbar-track{
-      background: ${({ theme }) => lighten(0.5, theme.textHighlight)};
+      background: ${({ theme }) => lighten(0.3, theme.secondary)};
     }
   }
 
   body {
-    background: ${props => props.theme.background};
+    /* background: ${props => props.theme.background}; */
+    /* background: #18191E; */
+    background: #202126;
     font: 400 1rem 'Josefin Sans', sans-serif;
   }
 

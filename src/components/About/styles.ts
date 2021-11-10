@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-
+  margin-top: 15rem;
 `;
 export const ItemContainer = styled.div`
- width: 100%;
+  width: 100%;
   display: flex;
   gap: 2rem;
   align-items: center;

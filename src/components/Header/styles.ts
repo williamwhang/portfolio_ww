@@ -18,6 +18,7 @@ export const Container = styled.header`
     display: flex;
     gap: 6rem;
     align-items: center;
+    font-size: 1.3rem;
     transition: 0.5s;
   }
 
@@ -33,9 +34,6 @@ export const Container = styled.header`
     transform: scale(0.95);
   }
 
-  /* ul:hover {
-    transform: scale(0.95);
-  } */
 `;
 
 export const NavLinkContainer = styled.li<NavLinkProps> `
@@ -49,7 +47,9 @@ export const NavLinkContainer = styled.li<NavLinkProps> `
         color: ${props => 
          props.isActive
           ? darken(0.2, props.theme.secondary)
-          : lighten(0.5, props.theme.primary)}
+          : lighten(0.5, props.theme.primary)};
+          transition: 0.3s;
+          font-weight: bold;
       }
   }
 `;
