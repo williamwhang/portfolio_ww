@@ -14,14 +14,16 @@ export const FormContainer = styled.form`
 
 
    > button {
-       border: none;
+       /* border: none; */
+       border: 1px solid ${({theme}) => theme.secondary};
        padding: 1rem 2.5rem;
-       /* color: #fff; */
+       color: ${({theme}) => theme.secondary};
        font-weight: 300;
        font-size: 1.2rem;
        text-transform: uppercase;
        /* border-radius: 05rem; */
-       background-color: ${({ theme}) => theme.primary};
+       /* background-color: ${({ theme}) => theme.primary}; */
+       background-color: transparent;
        transition: 0.5s;
        width: fit-content;
 
@@ -35,8 +37,9 @@ export const FormContainer = styled.form`
 export const Input = styled.input`
   height: 3rem;
   width: 100%;
-  background-color: ${({theme}) => theme.inputBackground};
-  border: 1px solid ${({theme}) => theme.border};
+  /* background-color: ${({theme}) => theme.inputBackground}; */
+  background-color: #2B2B2B;
+  border: 1px solid ${({theme}) => theme.secondary};
   padding: 1.7rem 1.5rem;
   color: ${({theme}) => theme.primary};
   /* border-radius: 0.5rem; */
@@ -61,8 +64,9 @@ export const Input = styled.input`
 export const TextArea = styled.textarea`
   height: 10rem;
   width: 100%;
-  background-color: ${({theme}) => theme.inputBackground};
-  border: 1px solid ${({theme}) => theme.border};
+  /* background-color: ${({theme}) => theme.inputBackground}; */
+  background-color: #2B2B2B;
+  border: 1px solid ${({theme}) => theme.secondary};
   padding: 1.7rem 1.5rem;
   color: ${({theme}) => theme.primary};
   /* border-radius: 0.5rem; */
