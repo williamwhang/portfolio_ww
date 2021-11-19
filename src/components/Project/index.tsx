@@ -5,7 +5,7 @@ import { Container } from './styles';
 function Project() {
   return (
     <Container>
-      <SectionTitle title="Project" />
+      <SectionTitle title="Project_" />
 
       <section>
         <ProjectItem 
@@ -18,14 +18,14 @@ function Project() {
         <ProjectItem 
           img="https://zippypixels.com/wp-content/uploads/2015/09/01-Free-perspective-website-mockup-824x542.jpg"
           title="Projeto 02"
-          type="Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum " slug={''}          // slug="teste"
+          type="Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum em ipsum Lorem ipsum Lorem ipem ipsum Lorem ipsum Lorem ip " slug={''}          // slug="teste"
           slug="teste"
         />
         
         <ProjectItem 
           img="https://zippypixels.com/wp-content/uploads/2015/09/01-Free-perspective-website-mockup-824x542.jpg"
           title="Projeto 03"
-          type="Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum " slug={''}          // slug="teste"
+          type="Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum em ipsum Lorem ipsum Lorem ip" slug={''}          // slug="teste"
           slug="teste"
         />
         

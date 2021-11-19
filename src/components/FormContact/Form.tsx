@@ -4,6 +4,7 @@ import { sendContactMail } from '../../pages/services/sendMail';
 import theme from '../../styles/theme';
 import { FormContainer, Input, TextArea } from './styles';
 
+
 export default function Form() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -15,7 +16,7 @@ export default function Form() {
         event.preventDefault();
 
         if(!name || !email || !message) {
-            toast("Preencha todos os campos", {
+            toast("Please make sure to fill all required fields.", {
                 style: {
                     background: theme.background,
                     color: '#fff'
@@ -31,14 +32,14 @@ export default function Form() {
             setEmail('');
             setMessage('');
 
-            toast("Mensagem enviado com sucesso!", {
+            toast("Your message was sent successfully!", {
                 style: {
                     background: theme.background,
                     color: '#fff'
                 }
             })
         } catch (error) {
-            toast("Something wrong, try again", {
+            toast("Something went wrong please try again.", {
                 style: {
                     background: theme.error,
                     color: '#fff'
@@ -51,15 +52,15 @@ export default function Form() {
 
     return (
         <FormContainer onSubmit={handleSubmit}>
-            <Input placeholder="Name"
+            <Input placeholder="[ Your name ]"
                 value={name}
                 onChange={({ target }) => setName(target.value)}
             />
-            <Input placeholder="Email" type="email"
+            <Input placeholder="[ Your email ]" type="email"
                 value={email}
                 onChange={({ target }) => setEmail(target.value)}
             />
-            <TextArea placeholder="Message" 
+            <TextArea placeholder="[ Your message ]" 
                 value={message}
                 onChange={({ target }) => setMessage(target.value)}
             />

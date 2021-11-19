@@ -1,6 +1,7 @@
 import SectionTitle from '../SectionTitle';
 import Form from './Form';
 import { Container } from './styles';
+import { BsFillArrowDownRightSquareFill} from "react-icons/Bs";
 
 function FormContact() {
   return (
@@ -8,14 +9,15 @@ function FormContact() {
       <SectionTitle 
       title={
         <>
-        Get in touch
+        {/* Get in touch */}
+        Contact me <BsFillArrowDownRightSquareFill />
         </>
       }
       description={
         <>
-        If you have any questions don't
+        Drop me a line, 
         <br />
-        hesitate to use the form.
+        I'd like to hear from you!
         </>
       }
       />

@@ -1,5 +1,5 @@
 import React from "react";
-import { BiUpArrow, IconName } from "react-icons/bi";
+import { BiUpArrow } from "react-icons/bi";
 import { Container } from './styles';
 
 function Footer() {
@@ -13,9 +13,7 @@ function Footer() {
   return (
     <Container>
       <div className="container">
-        <BiUpArrow
-          onClick={handleScrollTop}
-        />
+        <BiUpArrow onClick={handleScrollTop} />
       </div>
     </Container>
   );

@@ -7,7 +7,7 @@ export default function AboutItem() {
             <div>
                 <TextContainer>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adip
+                        I'm William, 
                         Lorem ipsum dolor sit amet, consectetur adip<br />
                         Lorem ipsum dolor sit amet, consectetur adip
                         Lorem ipsum dolor sit amet, consectetur adip<br />

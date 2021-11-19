@@ -86,6 +86,7 @@ export const ProjectContainer = styled.div<ProjectProps>`
         padding: 1rem;
         padding-top: 1.5rem;
         width: 30rem;
+        max-height: 20rem;
         /* height: 15rem; */
         display: flex;
         flex-direction: column;
@@ -116,8 +117,10 @@ export const ProjectContainer = styled.div<ProjectProps>`
   }
 
   > section {
-      width: 30rem;
+      /* width: 30rem; */
+      max-width: 30rem;
       /* height: 100%; */
+      /* height: 20rem; */
       height: 20rem;
       background: url(${props => props.imgUrl}) no-repeat center;
       background-size: cover;

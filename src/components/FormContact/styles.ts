@@ -14,22 +14,40 @@ export const FormContainer = styled.form`
 
 
    > button {
-       /* border: none; */
        border: 1px solid ${({theme}) => theme.secondary};
        padding: 1rem 2.5rem;
-       color: ${({theme}) => theme.secondary};
+       color: ${({theme}) => theme.primary};
        font-weight: 300;
        font-size: 1.2rem;
        text-transform: uppercase;
-       /* border-radius: 05rem; */
-       /* background-color: ${({ theme}) => theme.primary}; */
        background-color: transparent;
        transition: 0.5s;
        width: fit-content;
+       position: relative;
 
-       &:disabled {
+       /* &:disabled {
            opacity: 0.5;
-       }
+       } */
+   }
+
+    button::before {
+     content: '';
+     position: absolute;
+     background-color: ${({ theme }) => theme.secondary};
+     width: 0;
+     height: 100%;
+     top: 0;
+     left: 0;
+     z-index: -1;
+     transition: all 0.5s ease;
+   }
+
+   > button:hover::before {
+     width: 100%;
+   }
+
+   > button:hover {
+    color: #111111;
    }
 
 `;
@@ -37,22 +55,23 @@ export const FormContainer = styled.form`
 export const Input = styled.input`
   height: 3rem;
   width: 100%;
-  /* background-color: ${({theme}) => theme.inputBackground}; */
-  background-color: #2B2B2B;
+  background-color: transparent;
+  /* background-color: #2B2B2B; */
+
   border: 1px solid ${({theme}) => theme.secondary};
   padding: 1.7rem 1.5rem;
   color: ${({theme}) => theme.primary};
-  /* border-radius: 0.5rem; */
   font-size: 1.2rem;
   outline: none;
   transition: 0.5s;
+  position: relative;
+
+   &:focus {
+      border-color: ${({theme}) => theme.primary};
+  } 
 
   &:focus {
       border-color: ${({theme}) => theme.primary};
-  }
-
-  &::placeholder {
-    color: ${({theme}) => theme.primary};
   }
 
   @media(max-width: 450px) {
@@ -64,26 +83,22 @@ export const Input = styled.input`
 export const TextArea = styled.textarea`
   height: 10rem;
   width: 100%;
-  /* background-color: ${({theme}) => theme.inputBackground}; */
-  background-color: #2B2B2B;
+  
+  background-color: transparent;
   border: 1px solid ${({theme}) => theme.secondary};
   padding: 1.7rem 1.5rem;
   color: ${({theme}) => theme.primary};
-  /* border-radius: 0.5rem; */
+  
   font-size: 1.2rem;
   outline: none;
   transition: 0.5s;
   resize: none;
-
   grid-column: 1 / 3;
 
   &:focus {
       border-color: ${({theme}) => theme.primary};
   }
 
-  &::placeholder {
-    color: ${({theme}) => theme.primary};
-  }
 
   @media(max-width: 450px) {
      padding: 1.4rem;
