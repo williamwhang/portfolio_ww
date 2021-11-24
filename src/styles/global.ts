@@ -7,8 +7,6 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
-    /* font-family: 'Arimo', sans-serif; */
-    /* font-family: 'Roboto Slab', serif;  */
     ::-webkit-scrollbar {
       width: 8px;
       height: 5px;
@@ -23,8 +21,6 @@ export default createGlobalStyle`
   }
 
   body {
-    /* background: ${props => props.theme.background}; */
-    /* background: #18191E; */
     background: #202126;
     font: 400 1rem 'Josefin Sans', sans-serif;
   }

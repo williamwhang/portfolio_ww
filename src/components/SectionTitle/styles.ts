@@ -10,7 +10,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: right;
   /* align-items: center; */
-  gap: 0.5rem;
+  /* gap: 0.5rem; */
 
   h1 {
     color: ${({ theme }) => theme.secondary};

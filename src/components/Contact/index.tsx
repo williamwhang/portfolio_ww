@@ -1,22 +1,20 @@
 import SectionTitle from '../SectionTitle';
 import Form from './Form';
 import { Container } from './styles';
+
 import { BsFillArrowDownRightSquareFill} from "react-icons/Bs";
 
-function FormContact() {
+function Contact() {
   return (
-    <Container>
-      <SectionTitle 
-      title={
+    <Container id="contact" data-aos="fade-up" data-aos-dutarion="3000">
+      <SectionTitle title={
         <>
-        {/* Get in touch */}
         Contact me <BsFillArrowDownRightSquareFill />
         </>
       }
       description={
         <>
-        Drop me a line, 
-        <br />
+        Drop me a line, <br />
         I'd like to hear from you!
         </>
       }
@@ -26,4 +24,4 @@ function FormContact() {
   );
 };
 
-export default FormContact;
+export default Contact;

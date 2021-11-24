@@ -5,11 +5,11 @@ import { Container, TextContainer } from './styles';
 
 function HomeHero() {
   return (
-    <Container>
+    <Container >
       {/* <h1>HomeHero</h1> */}
       {/* <img src={} alt="Não decidi a imagem" /> */}
       <div>
-        <TextContainer>
+        <TextContainer data-aos="fade-right" >
           {/* <h1>I'm William Whang, a full stack designer, front-end and sportsman.</h1> */}
           <h1>I'm William Whang, <br/>
             a designer who codes, trains and is constantly learning.</h1>

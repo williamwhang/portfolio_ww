@@ -2,6 +2,19 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   margin-top: 15rem;
+
+   svg {
+        width: 5rem;
+        height: 3.5rem;
+        color: #fff;
+        transition: 0.5s;
+        cursor: pointer;
+        gap: 8rem;
+        &:hover {
+           color: ${({ theme }) => (theme.secondary)};
+           transform: scale(0.95);
+        }
+    }
 `;
 export const ItemContainer = styled.div`
   width: 100%;

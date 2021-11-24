@@ -10,24 +10,17 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* align-items: flex-start; */
-  justify-content: space-between;
-  gap: 4rem;
+  gap: 2rem;
 
   > section {
-  /* width:100%;
+  width:100%;
   display: flex;
   flex-direction: column;
-  gap: 4rem; */
+  gap: 4rem;
 
-  /* width: 100%; */
-      margin-top: 3rem;
-      display: flex;
-      gap: 3rem;
-
-  /* @media (max-width:1000px) {
+  @media (max-width:1000px) {
       gap: 2rem;
-    } */
+    }
 
     @media (max-width: 1000px) {
       flex-direction: column;
@@ -45,90 +38,38 @@ export const Container = styled.section`
 export const ProjectContainer = styled.div<ProjectProps>`
   width: 100%;
   display: flex;
-  height: 30rem;
-  flex-direction: column;
-  /* align-items: flex-start; */
-  /* justify-content: flex-start; */
+  height: 25rem;
+  align-items: flex-end;
+  position: relative;
+  
   box-shadow: -5px 5px 18px 2px #0f0f0f;
-  /* position: relative; */
-  justify-content: space-between;
 
 
-  /* > button {
+ 
+  > button {
      height: 4rem;
      margin: 0 0 3rem 5rem;
-     background: none;
-     border: none; */
-/* 
+     background: green;
+     border: none; 
+     text-font: uppercase
+
      a {
-         color: #11172b;
+         color: #fff;
          font-weight: 300;
          display: flex;
          align-items: center;
          gap: 0.8rem;
          transition: 0.5s;
-     } */
-
-      /* h2 {
-       
-        font-size: 2rem;
-        margin-bottom: 1.5rem;
-      } */
-
-      /* p {
-        color: #848484;
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-      } */
-
-      > div.text {
-        background-color: #18191E;
-        padding: 1rem;
-        padding-top: 1.5rem;
-        width: 30rem;
-        max-height: 20rem;
-        /* height: 15rem; */
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        /* justify-content: space-between; */
-        
-        transition: 0.5s;
-
-          flex-grow: 1;
-
-        h2 {
-          color: #848484;
-          font-size: 2rem;
-        }
-
-          p {
-            color: #848484;
-            font-size: 1.5rem;
-            margin-top: 2rem;
-      }
-
-      /* &:hover > section {
-       filter: brightness(1.3);
-       transform: translateY(-30px);
-       transition: 0.5s;
-    } */
+     } 
   }
 
   > section {
-      /* width: 30rem; */
-      max-width: 30rem;
-      /* height: 100%; */
-      /* height: 20rem; */
-      height: 20rem;
+      width: 40rem;
+      height: 100%;
       background: url(${props => props.imgUrl}) no-repeat center;
       background-size: cover;
       position: relative;
-
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
+      
 
       > div.overlay {
           position: absolute;
@@ -139,22 +80,72 @@ export const ProjectContainer = styled.div<ProjectProps>`
           transition: 0.5s;
       }
 
-  }
+      > div.text {
+        position: absolute;
+        top: 2rem;
+        right: -30rem;
+        transition: 0.5s;
+        width: fit-content;
+        width: 30rem;
+        /* background-color: #18191E; */
+        background-color: transparent;
+        
+        padding: 1rem;
+        /* padding-top: 1rem; */
 
-  /* &:nth-child(even) {
+        /* height: 30rem; */
+
+        /* flex-direction: column; */
+        /* display: flex; */
+        
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        transition: 0.5s;
+
+        /* flex-grow: 1; */
+
+        h2 {
+          color: #fff;
+          font-size: 2rem;
+          font-weight: bold;
+          text-shadow: -4px 5px 22px #11172b;
+        }
+
+          p {
+            color: #848484;
+            font-size: 1.2
+            rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+      }
+  }
+}
+
+&:hover {
+    > section {
+      >div.overlay {
+        opacity: 0.4;
+      }
+    }
+  }
+  
+
+&:nth-child(even) {
       flex-direction: row-reverse;
-  } */
 
-  &:hover > section {
-       filter: brightness(1.3);
-       transform: translateY(-30px);
-       transition: 0.5s;
-  }
+      > section > div.text {
+        text-align: right;
+        right: 0;
+        left: -30rem;
+      }
 
-  &:hover > div.text
-  {
-       filter: brightness(1.3);
-       transform: translateY(-30px);
-       transition: 0.5s;
+      /* &:hover {
+        > section > div.text {
+          left: -12rem;
+        }
+      } */
+
+
   }
 `;

@@ -2,11 +2,11 @@ import { NONAME } from 'dns';
 import styled from 'styled-components';
 
 export const Container = styled.section`
-  margin-top: 15rem;
+  margin-top: 1rem;
 `;
 
 export const FormContainer = styled.form`
-  margin-top:8rem;
+  margin-top: 2rem;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;

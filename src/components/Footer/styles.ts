@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.footer`
   width: 100%;
   display: flex;
-  margin-top: 5rem;
+  margin-top: 0.5rem;
   height: 5rem;
   text-align: right;
   float: right;
@@ -20,10 +20,20 @@ export const Container = styled.footer`
         color: #fff;
         transition: 0.5s;
         cursor: pointer;
-        gap: 8rem;
+        /* gap: 1rem; */
         &:hover {
            color: ${({ theme }) => (theme.secondary)};
            transform: scale(0.95);
         }
     }
+`;
+
+
+export const Button = styled.button`
+  min-width: 100%;
+  padding: 30px 30px;
+  border: none;
+  color: #111;
+  font-size: 24px;
+  cursor: pointer;
 `;
