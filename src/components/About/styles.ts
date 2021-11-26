@@ -34,20 +34,21 @@ export const ItemContainer = styled.div`
   }
 
   @media(max-width: 1450px) {
+    flex-direction: column;
+    width: 100%;
       > img {
           width: 30rem;
       }
-
       > div {
           flex: 1;
       }
     }
 
-      @media(max-width: 1000px) {
+      /* @media(max-width: 1000px) {
       > img {
           width: 22rem;
       }
-    }
+    } */
 
       @media(max-width: 700px) {
         flex-direction: column;

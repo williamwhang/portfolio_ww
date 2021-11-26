@@ -29,7 +29,7 @@ export const TextContainer = styled.section`
   width: 100%;
 
   h1 {
-      font-size: 8rem;
+      font-size: 5rem;
       font-weight: bold;
       color: #fff;
   }

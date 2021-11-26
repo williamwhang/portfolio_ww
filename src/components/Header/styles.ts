@@ -18,7 +18,7 @@ export const Container = styled.header`
     display: flex;
     gap: 4rem;
     align-items: center;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     transition: 0.5s;
   }
 
