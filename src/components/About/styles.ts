@@ -34,8 +34,6 @@ export const ItemContainer = styled.div`
   }
 
   @media(max-width: 1450px) {
-    flex-direction: column;
-    width: 100%;
       > img {
           width: 30rem;
       }

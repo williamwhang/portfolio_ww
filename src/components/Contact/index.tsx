@@ -2,7 +2,7 @@ import SectionTitle from '../SectionTitle';
 import Form from './Form';
 import { Container } from './styles';
 
-import { BsFillArrowDownRightSquareFill} from "react-icons/Bs";
+import { BsFillArrowDownRightSquareFill} from "react-icons/bs";
 
 function Contact() {
   return (
