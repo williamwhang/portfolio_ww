@@ -19,6 +19,7 @@ export const Container = styled.section`
     flex: 1;
     }
   }
+  
 
 `;
 
@@ -33,15 +34,15 @@ export const TextContainer = styled.section`
       color: #fff;
   }
 
-  @media (max-width: 1450px) {
+  @media (max-width: 1000px) {
     h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     }
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 600px) {
     h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     }
   }
   

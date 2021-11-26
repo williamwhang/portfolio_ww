@@ -31,7 +31,6 @@ export const Container = styled.section`
         flex-direction: column;
         gap: 1rem;
       }
-
   }
 `;
 
@@ -42,26 +41,7 @@ export const ProjectContainer = styled.div<ProjectProps>`
   align-items: flex-end;
   position: relative;
   
-  box-shadow: -5px 5px 18px 2px #0f0f0f;
-
-
- 
-  > button {
-     height: 4rem;
-     margin: 0 0 3rem 5rem;
-     background: green;
-     border: none; 
-     text-font: uppercase
-
-     a {
-         color: #fff;
-         font-weight: 300;
-         display: flex;
-         align-items: center;
-         gap: 0.8rem;
-         transition: 0.5s;
-     } 
-  }
+  /* box-shadow: -5px 5px 18px 2px #0f0f0f; */
 
   > section {
       width: 40rem;
@@ -70,7 +50,6 @@ export const ProjectContainer = styled.div<ProjectProps>`
       background-size: cover;
       position: relative;
       
-
       > div.overlay {
           position: absolute;
           width: 100%;
@@ -89,20 +68,10 @@ export const ProjectContainer = styled.div<ProjectProps>`
         width: 30rem;
         /* background-color: #18191E; */
         background-color: transparent;
-        
         padding: 1rem;
-        /* padding-top: 1rem; */
-
-        /* height: 30rem; */
-
-        /* flex-direction: column; */
-        /* display: flex; */
-        
         align-items: flex-start;
         justify-content: flex-start;
-
         transition: 0.5s;
-
         /* flex-grow: 1; */
 
         h2 {
@@ -114,12 +83,31 @@ export const ProjectContainer = styled.div<ProjectProps>`
 
           p {
             color: #848484;
-            font-size: 1.2
-            rem;
+            font-size: 1.2rem;
             margin-top: 2rem;
             margin-bottom: 2rem;
       }
+
+      > button {
+     height: 1rem;
+     /* margin: 0 0 3rem 5rem; */
+     /* padding: 1rem; */
+     background: none;
+     border: none; 
+    align-items: center;
+      }
+
+      a {
+         color: #fff;
+         font-weight: 300;
+         font-size: 2rem;
+         display: flex;
+         align-items: center;
+         /* gap: 0.8rem; */
+         transition: 0.5s;
+     } 
   }
+
 }
 
 &:hover {
@@ -139,13 +127,86 @@ export const ProjectContainer = styled.div<ProjectProps>`
         right: 0;
         left: -30rem;
       }
+    }
+
+    /* > button {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      margin: 0;
+    } */
 
       /* &:hover {
         > section > div.text {
           left: -12rem;
         }
       } */
+  @media (max-width: 1450px) {
+    > section {
+      width: 40rem;
+    }
+  }
 
+  @media (max-width: 1000px) {
+    > section {
+      width: 100%;
 
+      >div.text {
+        left: 1rem;
+        top: 1rem;
+      }
+    }
+
+    > button {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      margin: 0;
+    }
+
+    &:nth-child(even) {
+      flex-direction: row;
+
+      > section {
+      width: 100%;
+
+      >div.text {
+        left: 1rem;
+        top: 1rem;
+        text-align: left;
+      }
+    }
+
+    > button {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      margin: 0;
+    }
+  }
+}
+
+  @media(max-width: 700px) {
+    height: 17rem;
+  }
+
+  @media(max-width: 450px) {
+    > button {
+      height: auto;
+
+      a {
+        font-size: 1.5rem;
+        gap: 0.8rem;
+      }
+    }
+
+    > section > div.text {
+        h2 {
+          font-size: 1.5rem;
+        }
+        p {
+            font-size: 1rem;
+          }
+    }
   }
 `;

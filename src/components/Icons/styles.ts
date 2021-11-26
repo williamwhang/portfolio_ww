@@ -23,4 +23,21 @@ export const Container = styled.div`
         }
      }
 
+     @media (max-width: 1000px) {
+      svg {
+        width: 4rem;
+        height: 3rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+      svg {
+        width: 3rem;
+        height: 2rem;
+    }
+  }
+
 `;
+
+
+

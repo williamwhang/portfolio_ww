@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { AiOutlineRightCircle } from 'react-icons/ai';
+import { MdDoubleArrow } from 'react-icons/md';
 import { ProjectContainer } from "./styles";
 
 import React, { useState } from "react";
@@ -17,23 +17,19 @@ export default function ProjectItem({ title, type, slug, img }: ProjectItemProps
     window.open(url);
   }
 
-
   return (
     <ProjectContainer data-aos="fade-up" imgUrl={img} >
-
       <section>
         <div className="overlay" />
-        <div className="text">
+         <div className="text">
           <h2>{title}</h2>
           <p>{type}</p>
 
-          {/* <div className="container">  */}
-          <button type="button" onClick={() => handleRedirect("https://github.com/williamwhang")}>
-            GitHub
+          <button type="button" onClick={() => handleRedirect("https://github.com/ProjetoIntegrador-DH-Grupo3/main-project")}>
+            <Link href={"https://github.com/ProjetoIntegrador-DH-Grupo3/main-project"}>
+            <a> GitHub <MdDoubleArrow /></a>
+          </Link>
           </button>
-          {/* </div> */}
-
-
         </div>
 
         {/* <button type="button">

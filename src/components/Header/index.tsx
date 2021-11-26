@@ -6,8 +6,8 @@ import logo from '../../assets/will.png';
 // import { Link } from "react-scroll";
 
 
-import { Anchor } from 'antd';
-const { Link } = Anchor;
+// import { Anchor } from 'antd';
+// const { Link } = Anchor;
 
 function Header() {
   return (

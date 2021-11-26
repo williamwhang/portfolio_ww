@@ -11,19 +11,18 @@ function Project() {
 
       <section>
         <ProjectItem 
-          img="https://user-images.githubusercontent.com/73802190/143290998-13bc7030-90df-44bb-8a2b-387b8d473c1e.png"
+          img="https://user-images.githubusercontent.com/73802190/143438835-1cae53d3-7707-4de0-9505-31e5941dc405.jpg"
           title="DH BURGUER"
-          type="Esse projeto foi desenvolvido durante o curso de Full-Stack na Digital House, projeto integração.
-          Criação do design, a identidade visual, wireframe, side map, criação de banco de dados (My SQL)." 
+          type="This project was developed during the Full-Stack course at Digital House, integration project." 
           slug={''}          // slug="teste"
         />
         
         <ProjectItem 
-          img="https://user-images.githubusercontent.com/71772559/113495090-3e529600-94c5-11eb-953c-53ab4f71fc15.png"
+          img="https://user-images.githubusercontent.com/73802190/143436963-deaa5d63-08b2-4541-bb94-3ca94c4499a6.jpg"
           title="IGNEWS - Portal de notícias"
-          type="Esse projeto foi desenvolvido durante o Ignite da Rocketseat! 
-          A ideia era desenvolver do um blog pago onde o usuário loga usando o GitHub e paga sua inscrição usando o Stripe. " 
-          slug={''}          // slug="teste"
+          type="This project was developed during Rocketseat Ignite! The idea was to develop a paid blog where 
+          the user logs in using GitHub and pays their subscription using Stripe." 
+          slug={'https://github.com/williamwhang/primeiro-projeto-next'}          // slug="teste"
         />
         
         {/* <ProjectItem 

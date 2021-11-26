@@ -7,8 +7,12 @@ function About() {
 
   
   return (
-    <Container id="about">
-      <SectionTitle  title="My, Myself & I" />
+    <Container id="about" >
+      <SectionTitle  title={
+        <>
+       My, <br />Myself & I
+        </>
+      } />
       <section>
         <AboutItem />
       </section>

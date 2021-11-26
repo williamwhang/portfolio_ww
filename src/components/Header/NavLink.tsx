@@ -18,7 +18,7 @@ export default function NavLink({ title, path}: Props) {
     
     return (
         <NavLinkContainer isActive={isActive}>
-          <Anchor> </Anchor>
+          {/* <Anchor> </Anchor> */}
           
           <Link  href={path}>
             <a>{title}</a>

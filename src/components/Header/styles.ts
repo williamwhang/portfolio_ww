@@ -10,13 +10,13 @@ export const Container = styled.header`
   display: flex;
   align-items: right;
   float: right;
-  /* justify-content: center; */
+
   height: 4rem; 
   /* height: 3rem;  */
 
   ul { 
     display: flex;
-    gap: 6rem;
+    gap: 4rem;
     align-items: center;
     font-size: 1.3rem;
     transition: 0.5s;
@@ -34,14 +34,34 @@ export const Container = styled.header`
     transform: scale(0.95);
   }
 
-  /* link {
-    display: flex;
-    gap: 6rem;
-    align-items: center;
-    font-size: 1.3rem;
-    transition: 0.5s;
-  } */
+  @media(max-width: 1000px) {
+      > img {
+          width: 0.5rem;
+          
+          
+      }
 
+      > ul {
+        font-size: 1.2rem;
+        align-items: right;
+        gap: 3rem;
+      }
+    }
+
+    @media(max-width: 650px) {
+
+      > img {
+          width: 0.5rem;
+          height: 0.5rem;
+         
+          
+      }
+
+      > ul {
+        font-size: 1rem;
+        gap: 2rem;
+      }
+    }
 `;
 
 export const NavLinkContainer = styled.li<NavLinkProps> `
@@ -61,4 +81,5 @@ export const NavLinkContainer = styled.li<NavLinkProps> `
       }
       
   }
+  
 `;

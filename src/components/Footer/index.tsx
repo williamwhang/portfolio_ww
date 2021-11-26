@@ -11,7 +11,7 @@ function Footer() {
    }
 
   return (
-    <Container >
+    <Container>
       <div className="container" >
         <BiUpArrow id="#contact" onClick={handleScrollTop}/>
 

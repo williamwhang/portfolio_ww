@@ -6,7 +6,7 @@ import { BsFillArrowDownRightSquareFill} from "react-icons/Bs";
 
 function Contact() {
   return (
-    <Container id="contact" data-aos="fade-up" data-aos-dutarion="3000">
+    <Container id="contact" data-aos="fade-up" >
       <SectionTitle title={
         <>
         Contact me <BsFillArrowDownRightSquareFill />

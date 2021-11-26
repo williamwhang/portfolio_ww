@@ -10,7 +10,6 @@ function HomeHero() {
       {/* <img src={} alt="Não decidi a imagem" /> */}
       <div>
         <TextContainer data-aos="fade-right" >
-          {/* <h1>I'm William Whang, a full stack designer, front-end and sportsman.</h1> */}
           <h1>I'm William Whang, <br/>
             a designer who codes, trains and is constantly learning.</h1>
         </TextContainer>
