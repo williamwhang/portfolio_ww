@@ -1,6 +1,6 @@
 import { AiOutlineGithub, AiFillLinkedin, } from 'react-icons/ai';
-import { FaSpotify } from "react-icons/fa";
-import { AiFillBehanceCircle } from "react-icons/Ai";
+
+import { AiFillBehanceCircle } from "react-icons/ai";
 import { Container } from './styles';
 
 
