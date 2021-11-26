@@ -20,6 +20,7 @@ export default createGlobalStyle`
     }
   }
 
+
   body {
     background: #202126;
     font: 400 1rem 'Josefin Sans', sans-serif;
@@ -58,6 +59,7 @@ export default createGlobalStyle`
     }
   }
 
+ 
   html {
   scroll-behavior: smooth;
 }
