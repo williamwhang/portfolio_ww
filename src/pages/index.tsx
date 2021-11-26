@@ -1,5 +1,5 @@
 import { HomeContainer } from '../styles/HomeStyles';
-
+import Head from 'next/head';
 import Header from "../components/Header";
 import HomeHero from '../components/HomeHero';
 import About from '../components/About';
@@ -18,6 +18,9 @@ export default function Home() {
 
   return (
     <HomeContainer>
+      <Head> 
+        <title>Home | WiLL</title>
+      </Head>
       <Header />
 
       <main className="container">
