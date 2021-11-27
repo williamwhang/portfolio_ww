@@ -40,15 +40,19 @@ export const TextContainer = styled.section`
     }
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 800px) {
     h1 {
     font-size: 2rem;
+    justify-content: center; 
+    align-items: center;
     }
   }
 
   @media (max-width: 450px) {
     h1 {
-    font-size: 1.5rem;
+    /* font-size: 1.9rem; */
+    justify-content: center; 
+    align-items: center;
     }
   }
   

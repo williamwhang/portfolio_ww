@@ -24,8 +24,22 @@ export const Container = styled.footer`
         &:hover {
            color: ${({ theme }) => (theme.secondary)};
            transform: scale(0.95);
+           
         }
     }
+
+    @media(max-width: 1050px) {
+
+    svg {
+         width: 4rem;
+        height: 2.5rem;
+        }
+     }
+  
+
+  @media(max-width: 700px) {
+    text-align: center;
+  }
 `;
 
 
@@ -36,4 +50,5 @@ export const Button = styled.button`
   color: #111;
   font-size: 24px;
   cursor: pointer;
+
 `;

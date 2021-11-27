@@ -12,6 +12,19 @@ export const FormContainer = styled.form`
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 
+  @media(max-width: 700px) {
+     margin-top: 5rem;
+     grid-template-columns: 1fr;
+  }
+
+  @media(max-width: 450px) {
+     > button {
+       padding: 0.8rem 1.5rem;
+       font-size: 1rem;
+     }
+  }
+
+
 
    > button {
        border: 1px solid ${({theme}) => theme.secondary};
@@ -99,6 +112,9 @@ export const TextArea = styled.textarea`
       border-color: ${({theme}) => theme.primary};
   }
 
+  @media(max-width: 700px) {
+     grid-column: 1;
+  }
 
   @media(max-width: 450px) {
      padding: 1.4rem;

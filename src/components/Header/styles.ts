@@ -34,32 +34,50 @@ export const Container = styled.header`
   }
 
   @media(max-width: 1000px) {
-      > img {
-          width: 0.5rem;
-          
-          
+    display: flex;
+		width: 100%;
+    justify-content: space-between;
+       img {
+          width: 3.5rem;
       }
 
       > ul {
         font-size: 1rem;
-        align-items: right;
-        gap: 3rem;
+        /* align-items: right;
+        gap: 3rem; */
       }
     }
 
-    @media(max-width: 650px) {
+    @media(max-width: 850px) {
+      flex-direction: row;
+		  justify-content: space-between;
 
-      > img {
+     img {
+      /* flex-direction: row;
+		justify-content: space-between; */
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    float: center !important;
+		  }
+  
+    ul {
+      display: flex;
+      margin-right: 2rem;
+      flex-direction: row;
+		justify-content: space-between;
+    }
+
+
+      /* > img {
           width: 0.5rem;
           height: 0.5rem;
-         
-          
-      }
+      } */
 
-      > ul {
+      /* > ul {
         font-size: 0.95rem;
         gap: 2rem;
-      }
+      } */
     }
 `;
 
@@ -78,7 +96,6 @@ export const NavLinkContainer = styled.li<NavLinkProps> `
           transition: 0.3s;
           font-weight: bold;
       }
-      
   }
   
 `;
