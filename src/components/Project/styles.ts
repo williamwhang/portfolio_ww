@@ -5,7 +5,7 @@ interface ProjectProps {
 }
 
 export const Container = styled.section`
-  margin-top: 15rem;
+  /* margin-top: 15rem; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@ export const Container = styled.section`
       gap: 2rem;
     }
 
-    @media (max-width: 1000px) {
+    /* @media (max-width: 1000px) {
       flex-direction: column;
         gap: 2rem;
       }
@@ -30,7 +30,7 @@ export const Container = styled.section`
     @media (max-width: 700px) {
         flex-direction: column;
         gap: 1rem;
-      }
+      } */
   }
 `;
 
@@ -161,7 +161,7 @@ export const ProjectContainer = styled.div<ProjectProps>`
       position: absolute;
       bottom: 1rem;
       right: 1rem;
-      margin: 0;
+      /* margin: 0; */
     }
 
     &:nth-child(even) {
@@ -173,7 +173,7 @@ export const ProjectContainer = styled.div<ProjectProps>`
       >div.text {
         left: 1rem;
         top: 1rem;
-        text-align: left;
+        text-align: center;
       }
     }
 
@@ -189,7 +189,7 @@ export const ProjectContainer = styled.div<ProjectProps>`
   @media(max-width: 700px) {
     height: 17rem;
   }
-
+/* 
   @media(max-width: 450px) {
     > button {
       height: auto;
@@ -198,15 +198,15 @@ export const ProjectContainer = styled.div<ProjectProps>`
         font-size: 1.5rem;
         gap: 0.8rem;
       }
-    }
+    } */
 
-    > section > div.text {
+    /* > section > div.text {
         h2 {
           font-size: 1.5rem;
         }
         p {
             font-size: 1rem;
           }
-    }
-  }
+       }
+     } */
 `;

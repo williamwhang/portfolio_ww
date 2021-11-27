@@ -10,7 +10,6 @@ export const Container = styled.header`
   display: flex;
   align-items: right;
   float: right;
-
   height: 4rem; 
   /* height: 3rem;  */
 
@@ -42,7 +41,7 @@ export const Container = styled.header`
       }
 
       > ul {
-        font-size: 1.2rem;
+        font-size: 1rem;
         align-items: right;
         gap: 3rem;
       }
@@ -58,7 +57,7 @@ export const Container = styled.header`
       }
 
       > ul {
-        font-size: 1rem;
+        font-size: 0.95rem;
         gap: 2rem;
       }
     }

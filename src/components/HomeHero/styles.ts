@@ -14,11 +14,11 @@ export const Container = styled.section`
   margin-left: 0;
 
 
-  @media (max-width: 1450px) {
+  /* @media (max-width: 1450px) {
     > div {
     flex: 1;
     }
-  }
+  } */
   
 
 `;
@@ -34,15 +34,21 @@ export const TextContainer = styled.section`
       color: #fff;
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1450px) {
     h1 {
     font-size: 4rem;
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 1000px) {
     h1 {
     font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 450px) {
+    h1 {
+    font-size: 1.5rem;
     }
   }
   
