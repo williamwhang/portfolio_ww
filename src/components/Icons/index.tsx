@@ -1,6 +1,4 @@
 import { AiOutlineGithub, AiFillLinkedin, AiFillBehanceCircle } from 'react-icons/ai';
-
-// import { AiFillBehanceCircle } from "react-icons/ai";
 import { Container } from './styles';
 
 

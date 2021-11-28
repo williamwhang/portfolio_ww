@@ -53,16 +53,16 @@ export const Container = styled.header`
 		  justify-content: space-between;
 
      img {
-      /* flex-direction: row;
-		justify-content: space-between; */
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    float: center !important;
+      flex-direction: row;
+		justify-content: space-between;
 		  }
-  
+    
+
+    nav {
+		flex-direction: row;
+		justify-content: space-between;
+    }
     ul {
-      display: flex;
       margin-right: 2rem;
       flex-direction: row;
 		justify-content: space-between;

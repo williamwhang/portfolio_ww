@@ -3,11 +3,18 @@ import ProjectItem from './ProjectItem';
 import { Container } from './styles';
 
 import React, { useState } from "react";
+import ProjectItem2 from './ProjectItem2';
+import { BsFillArrowDownRightSquareFill} from "react-icons/bs";
 
 function Project() {
  return (
     <Container id="project">
-      <SectionTitle title="Project_" />
+      <SectionTitle title={
+        <>
+        Project <BsFillArrowDownRightSquareFill />
+        </>
+      }
+      />
 
       <section>
         <ProjectItem 
@@ -17,7 +24,7 @@ function Project() {
           slug={''}          // slug="teste"
         />
         
-        <ProjectItem 
+        <ProjectItem2
           img="https://user-images.githubusercontent.com/73802190/143436963-deaa5d63-08b2-4541-bb94-3ca94c4499a6.jpg"
           title="IGNEWS - Portal de notícias"
           type="This project was developed during Rocketseat Ignite! The idea was to develop a paid blog where 

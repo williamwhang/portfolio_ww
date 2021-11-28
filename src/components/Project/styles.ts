@@ -21,17 +21,8 @@ export const Container = styled.section`
   @media (max-width:1000px) {
       gap: 2rem;
     }
-
-    /* @media (max-width: 1000px) {
-      flex-direction: column;
-        gap: 2rem;
-      }
-
-    @media (max-width: 700px) {
-        flex-direction: column;
-        gap: 1rem;
-      } */
   }
+
 `;
 
 export const ProjectContainer = styled.div<ProjectProps>`
@@ -41,7 +32,26 @@ export const ProjectContainer = styled.div<ProjectProps>`
   align-items: flex-end;
   position: relative;
   
-  /* box-shadow: -5px 5px 18px 2px #0f0f0f; */
+  box-shadow: -5px 5px 18px 2px #0f0f0f;
+
+  > button {
+     height: 4rem;
+     margin: 0 0 1rem 1rem;
+     padding: 1rem;
+     background: transparent;
+     border: none; 
+     align-items: center;
+
+      a {
+         color: #fff;
+         font-size: 1.5rem;
+         font-weight: 300;
+         display: flex;
+         align-items: center;
+         gap: 0.8rem;
+         transition: 0.5s;
+        } 
+       }
 
   > section {
       width: 40rem;
@@ -57,16 +67,15 @@ export const ProjectContainer = styled.div<ProjectProps>`
           background: ${({ theme }) => theme.gradient};
           opacity: 0.75;
           transition: 0.5s;
-      }
+         }
 
       > div.text {
         position: absolute;
         top: 2rem;
         right: -30rem;
-        transition: 0.5s;
-        width: fit-content;
+        /* text-align: center; */
+        /* width: fit-content; */
         width: 30rem;
-        /* background-color: #18191E; */
         background-color: transparent;
         padding: 1rem;
         align-items: flex-start;
@@ -78,7 +87,7 @@ export const ProjectContainer = styled.div<ProjectProps>`
           color: #fff;
           font-size: 2rem;
           font-weight: bold;
-          text-shadow: -4px 5px 22px #11172b;
+          /* text-shadow: -4px 5px 22px #11172b; */
         }
 
           p {
@@ -86,41 +95,28 @@ export const ProjectContainer = styled.div<ProjectProps>`
             font-size: 1.2rem;
             margin-top: 2rem;
             margin-bottom: 2rem;
-      }
+           }
+         }
+       }
 
-      > button {
-     height: 1rem;
-     /* margin: 0 0 3rem 5rem; */
-     /* padding: 1rem; */
-     background: none;
-     border: none; 
-    align-items: center;
-      }
-
-      a {
-         color: #fff;
-         font-weight: 300;
-         font-size: 2rem;
-         display: flex;
-         align-items: center;
-         /* gap: 0.8rem; */
-         transition: 0.5s;
-     } 
-  }
-
-}
-
-&:hover {
-    > section {
-      >div.overlay {
-        opacity: 0.4;
-      }
-    }
-  }
-  
+   &:hover {
+      > section {
+         >div.overlay {
+              opacity: 0.4;
+                      }
+                 }
+            
+            >button a {
+              color: ${({ theme }) => theme.secondary};
+            }
+          }
 
 &:nth-child(even) {
       flex-direction: row-reverse;
+      
+      > button {
+            margin: 0 1rem 1rem 0;
+              }
 
       > section > div.text {
         text-align: right;
@@ -129,67 +125,55 @@ export const ProjectContainer = styled.div<ProjectProps>`
       }
     }
 
-    /* > button {
-      position: absolute;
-      bottom: 1rem;
-      right: 1rem;
-      margin: 0;
-    } */
-
-      /* &:hover {
-        > section > div.text {
-          left: -12rem;
-        }
-      } */
   @media (max-width: 1450px) {
     > section {
-      width: 40rem;
-    }
-  }
+          width: 40rem;
+               }
+             }
 
   @media (max-width: 1000px) {
     > section {
-      width: 100%;
+           width: 100%;
 
-      >div.text {
-        left: 1rem;
-        top: 1rem;
-      }
-    }
+         >div.text {
+            left: 1rem;
+             top: 1rem;
+                    }
+              }
 
     > button {
-      position: absolute;
-      bottom: 1rem;
-      right: 1rem;
+          position: absolute;
+          bottom: 1rem;
+          right: 1rem;
       /* margin: 0; */
-    }
+             }
 
     &:nth-child(even) {
       flex-direction: row;
 
       > section {
-      width: 100%;
+            width: 100%;
 
       >div.text {
-        left: 1rem;
-        top: 1rem;
-        text-align: center;
-      }
-    }
+            left: 1rem;
+            top: 1rem;
+            text-align: left;
+                 }
+               }
 
-    > button {
-      position: absolute;
-      bottom: 1rem;
-      right: 1rem;
-      margin: 0;
-    }
-  }
-}
+      > button {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            margin: 0;
+               }
+             }
+         }
 
   @media(max-width: 700px) {
     height: 17rem;
   }
-/* 
+
   @media(max-width: 450px) {
     > button {
       height: auto;
@@ -198,9 +182,9 @@ export const ProjectContainer = styled.div<ProjectProps>`
         font-size: 1.5rem;
         gap: 0.8rem;
       }
-    } */
+    }
 
-    /* > section > div.text {
+    > section > div.text {
         h2 {
           font-size: 1.5rem;
         }
@@ -208,5 +192,5 @@ export const ProjectContainer = styled.div<ProjectProps>`
             font-size: 1rem;
           }
        }
-     } */
+     }
 `;

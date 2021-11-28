@@ -27,7 +27,7 @@ export default function ProjectItem({ title, type, slug, img }: ProjectItemProps
           </div>
           </section>
           
-          <button type="button" onClick={() => handleRedirect("https://github.com/ProjetoIntegrador-DH-Grupo3/main-project")}>
+          <button type="button" onClick={() => handleRedirect("https://github.com/williamwhang/primeiro-projeto-next")}>
             <Link href="#">
             <a> GitHub <MdDoubleArrow /></a>
           </Link>

@@ -31,8 +31,8 @@ export const Container = styled.footer`
     @media(max-width: 1050px) {
 
     svg {
-         width: 4rem;
-        height: 2.5rem;
+        width: 3rem;
+        height: 2rem;
         }
      }
   
