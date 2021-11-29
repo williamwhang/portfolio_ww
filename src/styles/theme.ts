@@ -8,7 +8,7 @@ const theme = {
   textHighlight: '#98A5C3',
   border: '#313958',
   inputBackground: '#1E253E',
-  error: '#d45d45d'
+  error: '#d45d5d'
 };
 
 export default theme;

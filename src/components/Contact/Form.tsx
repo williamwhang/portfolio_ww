@@ -18,7 +18,7 @@ export default function Form() {
         if(!name || !email || !message) {
             toast("Please make sure to fill all required fields.", {
                 style: {
-                    background: theme.background,
+                    background: theme.error,
                     color: '#fff'
                 }
             });
@@ -31,10 +31,9 @@ export default function Form() {
             setName('');
             setEmail('');
             setMessage('');
-
             toast("Your message was sent successfully!", {
                 style: {
-                    background: theme.background,
+                    background: theme.secondary,
                     color: '#fff'
                 }
             })

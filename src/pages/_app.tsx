@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
       <GlobalStyles />
     </ThemeProvider>
     
-    <Toaster position="bottom-right"/></>
+    <Toaster position="top-right"/></>
   );
 }
 
