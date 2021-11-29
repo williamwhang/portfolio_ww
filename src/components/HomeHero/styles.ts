@@ -5,22 +5,16 @@ export const Container = styled.section`
   display: flex;
   gap: 2rem;
   align-items: center;
-  /* justify-content: center; */
-  /* align-items: right; */
-  /* float: right; */
+  
   margin-top: 5rem;
-  /* margin-right: 0;
-  padding-left: 0; */
   margin-left: 0;
 
-
-  /* @media (max-width: 1450px) {
+  @media (max-width: 900px) {
     > div {
-    flex: 1;
-    }
-  } */
-  
-
+      align-items: center;
+    justify-content: center;
+    }  
+}
 `;
 
 

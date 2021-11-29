@@ -17,7 +17,7 @@ export default function NavLink({ title, path}: Props) {
     const isActive = router.pathname === path;
     
     return (
-        <NavLinkContainer isActive={isActive}>
+        <NavLinkContainer data-aos="fade-right" isActive={isActive}>
           {/* <Anchor> </Anchor> */}
           
           <Link  href={path}>

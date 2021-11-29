@@ -32,7 +32,7 @@ function Project() {
           slug={'https://github.com/williamwhang/primeiro-projeto-next'}          // slug="teste"
         />
         
-        {/* <ProjectItem 
+        {/* <ProjectItem3 -criar arquivo e importar 
           img="https://zippypixels.com/wp-content/uploads/2015/09/01-Free-perspective-website-mockup-824x542.jpg"
           title="Projeto 03"
           type="Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum em ipsum Lorem ipsum Lorem ip" slug={''}          // slug="teste"

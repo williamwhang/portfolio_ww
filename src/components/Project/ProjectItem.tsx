@@ -21,18 +21,17 @@ export default function ProjectItem({ title, type, slug, img }: ProjectItemProps
     <ProjectContainer data-aos="fade-up" imgUrl={img} >
       <section>
         <div className="overlay" />
-         <div className="text">
+        <div className="text">
           <h2>{title}</h2>
           <p>{type}</p>
-          </div>
-          </section>
-          
-          <button type="button" onClick={() => handleRedirect("https://github.com/ProjetoIntegrador-DH-Grupo3/main-project")}>
-            <Link href="#">
-            <a> GitHub <MdDoubleArrow /></a>
-          </Link>
-          </button>
-   
+        </div>
+      </section>
+      
+      <button type="button" onClick={() => handleRedirect("https://github.com/ProjetoIntegrador-DH-Grupo3/main-project")}>
+        <Link href="#">
+          <a> GitHub <MdDoubleArrow /></a>
+        </Link>
+      </button>
     </ProjectContainer>
   )
 }

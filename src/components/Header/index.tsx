@@ -4,8 +4,6 @@ import logo from '../../assets/will.png';
 
 // import { NavHashLink as Link } from 'react-router-hash-link';
 // import { Link } from "react-scroll";
-
-
 // import { Anchor } from 'antd';
 // const { Link } = Anchor;
 
@@ -14,7 +12,6 @@ function Header() {
     <Container>
       <ul>
         <img src={logo} alt="Logo"  data-aos="flip-left"/>
-        {/* <NavLink title="Will" path="/" /> */}
         <NavLink  title="About" path="#about" />
         <NavLink title="Project" path="#project" />
         <NavLink title="Contact" path="#contact" />
@@ -24,10 +21,8 @@ function Header() {
         <Link href="#project" title="Project" />
         <Link href="#contact" title="Contact" />
       </Anchor>, */}
-
       </ul>
-     
     </Container>
       );
-      }
+    }
 export default Header;

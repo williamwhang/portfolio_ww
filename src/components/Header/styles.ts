@@ -8,8 +8,11 @@ interface NavLinkProps {
 export const Container = styled.header`
   width:100%;
   display: flex;
-  align-items: right;
-  float: right;
+  /* align-items: right; */
+  /* float: right; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  justify-content: space-between;
   height: 4rem; 
   /* height: 3rem;  */
 
@@ -22,7 +25,7 @@ export const Container = styled.header`
   }
 
   img {
-    display: block;
+    /* display: block; */
     margin-inline-start: 50px;
     /* margin-inline-end: 0px; */
     width: 4.5rem;
