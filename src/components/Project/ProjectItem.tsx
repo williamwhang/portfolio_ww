@@ -22,8 +22,8 @@ export default function ProjectItem({ title, type, slug, img }: ProjectItemProps
       <section>
         <div className="overlay" />
         <div className="text">
-          <h2>{title}</h2>
-          <p>{type}</p>
+          <h2>DH BURGUER</h2>
+          <p>This project was developed during the Full-Stack course at Digital House, integration project.</p>
         </div>
       </section>
       

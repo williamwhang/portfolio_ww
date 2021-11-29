@@ -27,16 +27,16 @@ export const TextContainer = styled.section`
       font-weight: bold;
       color: #fff;
   }
-
+/* 
   @media (max-width: 1450px) {
     h1 {
     font-size: 4rem;
     }
-  }
+  } */
 
   @media (max-width: 800px) {
     h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     justify-content: center; 
     align-items: center;
     }

@@ -22,8 +22,9 @@ export default function ProjectItem({ title, type, slug, img }: ProjectItemProps
             <section>
                 <div className="overlay" />
                 <div className="text">
-                    <h2>{title}</h2>
-                    <p>{type}</p>
+                    <h2>IGNEWS - Portal de notícias</h2>
+                    <p>This project was developed during Rocketseat Ignite! The idea was to develop a paid blog where
+                        the user logs in using GitHub and pays their subscription using Stripe.</p>
                 </div>
             </section>
 

@@ -30,12 +30,12 @@ export const Container = styled.div`
     }
   }
 
-  @media (max-width: 600px) {
+  /* @media (max-width: 600px) {
       svg {
         width: 3rem;
         height: 2rem;
     }
-  }
+  } */
 
 `;
 

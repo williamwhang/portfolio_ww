@@ -48,7 +48,7 @@ export const ItemContainer = styled.div`
       }
     } */
 
-      @media(max-width: 700px) {
+      @media(max-width: 1000px) {
         flex-direction: column;
         > div {
           width: 100%;
@@ -73,15 +73,15 @@ export const TextContainer = styled.div`
       }
     }
 
-      @media(max-width: 1000px) {
+      /* @media(max-width: 1000px) {
         p {
           font-size: 1.5rem;
       }
-    }
+    } */
 
       @media(max-width: 700px) {
         > p {
-          font-size: 1rem;
+          font-size: 1.5rem;
       }
     }
 `;

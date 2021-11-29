@@ -14,6 +14,7 @@ export const Container = styled.section`
 
   > section {
   width:100%;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -32,7 +33,7 @@ export const ProjectContainer = styled.div<ProjectProps>`
   align-items: flex-end;
   position: relative;
   
-  box-shadow: -5px 5px 18px 2px #0f0f0f;
+  /* box-shadow: -5px 5px 18px 2px #0f0f0f; */
 
   > button {
      height: 4rem;
@@ -133,13 +134,27 @@ export const ProjectContainer = styled.div<ProjectProps>`
 
   @media (max-width: 1000px) {
     > section {
-           width: 100%;
+      width: 100%;
 
          >div.text {
             left: 1rem;
              top: 1rem;
                     }
               }
+
+              /* p {
+              overflow: hidden;
+             }  */
+
+  @media (max-width: 540px) {
+    h2 {
+          font-size: 1rem;
+        }
+
+          p {
+            font-size: 0.7rem;
+           }
+  }
 
     > button {
           position: absolute;
@@ -152,7 +167,7 @@ export const ProjectContainer = styled.div<ProjectProps>`
       flex-direction: row;
 
       > section {
-            width: 100%;
+        width: 100vh;
 
       >div.text {
             left: 1rem;
@@ -185,12 +200,14 @@ export const ProjectContainer = styled.div<ProjectProps>`
     }
 
     > section > div.text {
+      width: 100vh;
         h2 {
           font-size: 1.5rem;
         }
         p {
-            font-size: 1rem;
+            font-size: 1.5rem;
           }
        }
      }
+    }
 `;
