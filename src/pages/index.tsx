@@ -18,7 +18,19 @@ export default function Home() {
   return (
     <HomeContainer>
       <Head>
-        <title>Home | WiLL</title>
+        <title>HOME | WILL</title>
+        <meta
+          name="description"
+          content="I am a Full Stack developer and here I present some projects developed by me!"
+        />
+        <meta property="og:image" content="/ogimage.png" />
+        <meta property="og:image:secure_url" content="/ogimage.png" />
+        <meta name="twitter:image" content="/ogimage.png" />
+        <meta name="twitter:image:src" content="/ogimage.png" />
+        <meta
+          property="og:description"
+          content="I am a Full Stack developer and here I present some projects developed by me!"
+        />
       </Head>
       <Header />
 
