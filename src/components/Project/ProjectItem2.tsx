@@ -18,7 +18,7 @@ export default function ProjectItem({ title, type, slug, img }: ProjectItemProps
     }
 
     return (
-        <ProjectContainer data-aos="fade-up" imgUrl={img} >
+    <ProjectContainer data-aos="fade-up" imgUrl={img}>
             <section>
                 <div className="overlay" />
                 <div className="text">
