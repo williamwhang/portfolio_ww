@@ -2,103 +2,67 @@ import { lighten, darken } from 'polished';
 import styled from 'styled-components';
 
 interface NavLinkProps {
-    isActive: boolean;
+  isActive: boolean;
 }
 
 export const Container = styled.header`
-  width:100%;
+  width: 100%;
   display: flex;
-  /* align-items: right; */
-  /* float: right; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  justify-content: space-between;
-  height: 4rem; 
-  /* height: 3rem;  */
+  height: 4rem;
 
-  ul { 
+  ul {
     display: flex;
-    gap: 4rem;
     align-items: center;
+    justify-content: space-between;
     font-size: 1.2rem;
     transition: 0.5s;
+    width: 100%;
+    margin-right: 2rem;
+
+    @media (min-width: 540px) {
+      gap: 4rem;
+      justify-content: inherit;
+    }
   }
 
   img {
-    /* display: block; */
     margin-inline-start: 50px;
-    /* margin-inline-end: 0px; */
     width: 4.5rem;
-    /* height: 3rem; */
   }
 
   img:hover {
     transform: scale(0.95);
   }
 
-  @media(max-width: 1000px) {
-    display: flex;
-		width: 100%;
-    justify-content: space-between;
-       img {
-          width: 3.5rem;
-      }
-
-      > ul {
-        font-size: 1rem;
-        /* align-items: right;
-        gap: 3rem; */
-      }
+  @media (max-width: 1000px) {
+    img {
+      width: 3.5rem;
     }
 
-    @media(max-width: 850px) {
-      flex-direction: row;
-		  justify-content: space-between;
-
-     img {
-      flex-direction: row;
-		justify-content: space-between;
-		  }
-    
-
-    nav {
-		flex-direction: row;
-		justify-content: space-between;
+    > ul {
+      font-size: 1rem;
     }
-    ul {
-      margin-right: 2rem;
-      flex-direction: row;
-		justify-content: space-between;
-    }
-
-
-      /* > img {
-          width: 0.5rem;
-          height: 0.5rem;
-      } */
-
-      /* > ul {
-        font-size: 0.95rem;
-        gap: 2rem;
-      } */
-    }
+  }
 `;
 
 export const NavLinkContainer = styled.li<NavLinkProps> `
   a {
-      text-transform: uppercase;
-      color: ${props => 
+    text-transform: uppercase;
+    color: ${props =>
       props.isActive ? props.theme.primary : props.theme.secondary};
-      transition: 0.5s;
+    transition: 0.5s;
 
-      &:hover {
-        color: ${props => 
-         props.isActive
+    &:hover {
+      color: ${props =>
+        props.isActive
           ? darken(0.2, props.theme.secondary)
           : lighten(0.5, props.theme.primary)};
-          transition: 0.3s;
-          font-weight: bold;
-      }
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    @media (max-width: 540px) {
+      font-size: 0.9rem;
+    }
   }
-  
 `;

@@ -1,5 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
+// eslint-disable-next-line import/prefer-default-export
 export const HomeContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -7,8 +8,8 @@ export const HomeContainer = styled.div`
   height: 100%;
 
   > main {
-     display: flex;
-     flex-direction: column;
-     gap: 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
   }
 `;

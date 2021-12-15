@@ -4,20 +4,21 @@ import { Container } from './styles';
 
 
 function About() {
-
-  
   return (
-    <Container id="about" >
-      <SectionTitle  title={
-        <>
-       My, <br />Myself & I
-        </>
-      } />
+    <Container id="about">
+      <SectionTitle
+        title={
+          <>
+            My, <br />
+            Myself & I
+          </>
+        }
+      />
       <section>
         <AboutItem />
       </section>
     </Container>
   );
-};
+}
 
 export default About;

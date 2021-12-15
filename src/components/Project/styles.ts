@@ -5,7 +5,6 @@ interface ProjectProps {
 }
 
 export const Container = styled.section`
-  /* margin-top: 15rem; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -13,17 +12,15 @@ export const Container = styled.section`
   gap: 2rem;
 
   > section {
-  width:100%;
-  width: fit-content;
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 
-  @media (max-width:1000px) {
+    @media (max-width: 1000px) {
       gap: 2rem;
     }
   }
-
 `;
 
 export const ProjectContainer = styled.div<ProjectProps>`
@@ -32,26 +29,26 @@ export const ProjectContainer = styled.div<ProjectProps>`
   height: 25rem;
   align-items: flex-end;
   position: relative;
-  
-  /* box-shadow: -5px 5px 18px 2px #0f0f0f; */
+
+  box-shadow: -5px 5px 18px 2px #0f0f0f;
 
   > button {
-     height: 4rem;
-     margin: 0 0 1rem 1rem;
-     padding: 1rem;
-     background: transparent;
-     border: none; 
-     align-items: center;
+    height: 4rem;
+    margin: 0 0 1rem 1rem;
+    padding: 1rem;
+    background: transparent;
+    border: none;
+    align-items: center;
 
-      a {
-         color: #fff;
-         font-size: 1.5rem;
+    a {
+      color: ${({ theme }) => theme.secondary};
+      font-size: 1.5rem;
          font-weight: 300;
          display: flex;
          align-items: center;
          gap: 0.8rem;
          transition: 0.5s;
-        } 
+        }
        }
 
   > section {
@@ -60,7 +57,7 @@ export const ProjectContainer = styled.div<ProjectProps>`
       background: url(${props => props.imgUrl}) no-repeat center;
       background-size: cover;
       position: relative;
-      
+
       > div.overlay {
           position: absolute;
           width: 100%;
@@ -74,21 +71,20 @@ export const ProjectContainer = styled.div<ProjectProps>`
         position: absolute;
         top: 2rem;
         right: -30rem;
-        /* text-align: center; */
-        /* width: fit-content; */
         width: 30rem;
         background-color: transparent;
         padding: 1rem;
         align-items: flex-start;
         justify-content: flex-start;
         transition: 0.5s;
-        /* flex-grow: 1; */
+
+        max-width: 100%;
 
         h2 {
           color: #fff;
           font-size: 2rem;
           font-weight: bold;
-          /* text-shadow: -4px 5px 22px #11172b; */
+          text-shadow: -4px 5px 22px #11172b;
         }
 
           p {
@@ -100,21 +96,21 @@ export const ProjectContainer = styled.div<ProjectProps>`
          }
        }
 
-   &:hover {
-      > section {
-         >div.overlay {
-              opacity: 0.4;
-                      }
-                 }
-            
-            >button a {
-              color: ${({ theme }) => theme.secondary};
-            }
-          }
+  &:hover {
+    > section {
+      > div.overlay {
+        opacity: 0.4;
+      }
+    }
+
+    > button a {
+      color: ${({ theme }) => theme.primary};
+    }
+  }
 
 &:nth-child(even) {
       flex-direction: row-reverse;
-      
+
       > button {
             margin: 0 1rem 1rem 0;
               }
@@ -134,7 +130,7 @@ export const ProjectContainer = styled.div<ProjectProps>`
 
   @media (max-width: 1000px) {
     > section {
-      width: 100%;
+           width: 100%;
 
          >div.text {
             left: 1rem;
@@ -142,32 +138,17 @@ export const ProjectContainer = styled.div<ProjectProps>`
                     }
               }
 
-              /* p {
-              overflow: hidden;
-             }  */
-
-  @media (max-width: 540px) {
-    h2 {
-          font-size: 1rem;
-        }
-
-          p {
-            font-size: 0.7rem;
-           }
-  }
-
     > button {
           position: absolute;
           bottom: 1rem;
           right: 1rem;
-      /* margin: 0; */
              }
 
     &:nth-child(even) {
       flex-direction: row;
 
       > section {
-        width: 100vh;
+            width: 100%;
 
       >div.text {
             left: 1rem;
@@ -183,7 +164,7 @@ export const ProjectContainer = styled.div<ProjectProps>`
             margin: 0;
                }
              }
-         }
+       }
 
   @media(max-width: 700px) {
     height: 17rem;
@@ -200,14 +181,12 @@ export const ProjectContainer = styled.div<ProjectProps>`
     }
 
     > section > div.text {
-      width: 100vh;
         h2 {
           font-size: 1.5rem;
         }
         p {
-            font-size: 1.5rem;
+            font-size: 1rem;
           }
        }
      }
-    }
 `;

@@ -2,7 +2,7 @@ import { ItemContainer, TextContainer } from './styles';
 import picture from '../../assets/me.jpg';
 
 import { Container } from './styles';
-import { BiUpArrow } from "react-icons/bi";
+import { BiUpArrow } from 'react-icons/bi';
 
 export default function AboutItem() {
 
@@ -18,13 +18,14 @@ export default function AboutItem() {
             <div>
                 <TextContainer data-aos="fade-right">
                     <p>
-                        I'm William Whang, nice to meet you. I've been in this world of programming for a short time,
-                        I made a career transition and I believe I made a great decision.
-                        Programming is like life, it's a lifelong learning experience, and
-                        I challenge myself to do interesting things that matter and make sense to me.
-                        Every day I have been feeding myself with this energy to learn and evolve, 
+            I'm William Whang, nice to meet you. I've been in this world of
+            programming for a short time, I made a career transition and I
+            believe I made a great decision. Programming is like life, it's a
+            lifelong learning experience, and I challenge myself to do
+            interesting things that matter and make sense to me. Every day I
+            have been feeding myself with this energy to learn and evolve, it
                         it inspires me every day more.
-                        I'm never satisfied with just having ideas. Instead, 
+                        I'm never satisfied with just having ideas. Instead,
                         I have an almost impulsive need to act on them.
                     </p>
                 </TextContainer>

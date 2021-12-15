@@ -5,17 +5,19 @@ import { Container, TextContainer } from './styles';
 
 function HomeHero() {
   return (
-    <Container >
+    <Container>
       <div>
         <TextContainer data-aos="fade-right" >
-          <h1>I'm William Whang, <br/>
-            a designer who codes, trains and <br/>
-            is constantly learning.</h1>
+          <h1>
+            I'm William Whang, <br />
+            a designer who codes, trains and <br />
+            is constantly learning.
+          </h1>
         </TextContainer>
         <Icons />
       </div>
     </Container>
   );
-};
+}
 
 export default HomeHero;

@@ -24,44 +24,44 @@ export default createGlobalStyle`
   body {
     background: #202126;
     font: 400 1rem 'Josefin Sans', sans-serif;
-  }
+   }
 
   img {
     width: 100%;
     max-width: 100%;
-  }
+   }
 
   ul {
     list-style: none;
-  }
+   }
 
   button {
     cursor: pointer;
-  }
+   }
 
   a {
     text-decoration: none;
-  }
+   }
+
+   html {
+  scroll-behavior: smooth;
+}
 
   .container {
     width: 100%;
     margin: 0 auto;
     max-width: 85rem;
     padding: 0 1rem;
+
     @media(max-width: 1450px) {
       max-width: 70rem;
-    }
+     }
     @media(max-width: 1000px) {
       max-width: 50rem;
-    }
+     }
     @media(max-width: 700px) {
       padding: 0 2rem;
-    }
+     }
   }
-
- 
-  html {
-  scroll-behavior: smooth;
-}
 
 `;

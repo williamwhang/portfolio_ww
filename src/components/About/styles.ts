@@ -33,14 +33,14 @@ export const ItemContainer = styled.div`
       flex: 4;
   }
 
-  @media(max-width: 1450px) {
-      > img {
-          width: 30rem;
-      }
-      > div {
-          flex: 1;
-      }
+  @media (max-width: 1450px) {
+    > img {
+      width: 30rem;
     }
+    > div {
+      flex: 1;
+    }
+  }
 
       /* @media(max-width: 1000px) {
       > img {
@@ -48,13 +48,12 @@ export const ItemContainer = styled.div`
       }
     } */
 
-      @media(max-width: 1000px) {
-        flex-direction: column;
-        > div {
-          width: 100%;
-      }
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    > div {
+      width: 100%;
     }
-
+  }
 `;
 
 export const TextContainer = styled.div`

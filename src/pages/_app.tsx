@@ -7,12 +7,14 @@ import theme from '../styles/theme';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <><ThemeProvider theme={theme}>
-      <Component {...pageProps} />
-      <GlobalStyles />
-    </ThemeProvider>
-    
-    <Toaster position="top-right"/></>
+    <>
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+        <GlobalStyles />
+      </ThemeProvider>
+
+      <Toaster position="top-right" />
+    </>
   );
 }
 

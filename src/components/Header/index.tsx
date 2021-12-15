@@ -11,8 +11,8 @@ function Header() {
   return (
     <Container>
       <ul>
-        <img src={logo} alt="Logo"  data-aos="flip-left"/>
-        <NavLink  title="About" path="#about" />
+        <img src={logo} alt="Logo" data-aos="flip-left" />
+        <NavLink title="About" path="#about" />
         <NavLink title="Project" path="#project" />
         <NavLink title="Contact" path="#contact" />
 
@@ -23,6 +23,6 @@ function Header() {
       </Anchor>, */}
       </ul>
     </Container>
-      );
-    }
+  );
+}
 export default Header;
