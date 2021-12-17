@@ -1,7 +1,7 @@
 
 <img src="https://user-images.githubusercontent.com/73802190/146577141-2412233d-f7b4-4ddc-b9ac-f28ee7c48780.png"  width="300" height="300" text-align: center> <img src="https://user-images.githubusercontent.com/73802190/146577141-2412233d-f7b4-4ddc-b9ac-f28ee7c48780.png" width="300" height="300" text-align: center> <img src="https://user-images.githubusercontent.com/73802190/146577141-2412233d-f7b4-4ddc-b9ac-f28ee7c48780.png" width="300" height="300" text-align: center > 
 ---
-<h1 align="center"> W I L L I A M  |  W H A N G  </h1>
+<h2 align="center"> W I L L I A M  |  W H A N G  </h2>
   <br>
   
   
